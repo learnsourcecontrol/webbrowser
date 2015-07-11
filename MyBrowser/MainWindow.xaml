@@ -1,0 +1,14 @@
+﻿<Window x:Name="MainWindow1" x:Class="MyBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MyBrowser" Height="448.95" Width="735.706" Background="#FF419D68" Icon="Images/VENU_LAPTOP - 735362_6007815677388_79951987_n.jpg" Loaded="MainWindow1_Loaded" WindowState="Maximized">
+    <Grid>
+        <Label Content="URL:" HorizontalAlignment="Left" Margin="10,3,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.564,0.515" Width="37"/>
+        <TextBox x:Name="Urlbox" HorizontalAlignment="Left" Height="23" Margin="52,6,0,0" TextWrapping="Wrap" Text="http:\\" VerticalAlignment="Top" Width="435" TextChanged="TextBox_TextChanged_1"/>
+        <Button x:Name="GoButton" Content="GO" HorizontalAlignment="Left" Margin="512,10,0,0" VerticalAlignment="Top" Width="49" Height="19" Click="GoButton_Click"/>
+        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="585,10,0,0" VerticalAlignment="Top" Width="49" Height="19" Click="Button_Click_1"/>
+        <Button x:Name="Fwdbutton" Content="FWD" HorizontalAlignment="Left" Margin="658,10,0,0" VerticalAlignment="Top" Width="49" Height="19" Click="Fwdbutton_Click"/>
+        <WebBrowser x:Name="Browser" Margin="4.6,34,4.6,5.2"/>
+
+    </Grid>
+</Window>
