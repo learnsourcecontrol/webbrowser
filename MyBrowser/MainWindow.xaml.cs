@@ -41,7 +41,15 @@ namespace MyBrowser
 
         private void GoButton_Click(object sender, RoutedEventArgs e)
         {
-            Browser.Source = new Uri(@"http://" + Urlbox.Text);
+            try
+            {
+                Browser.Source = new Uri(@"http://" + Urlbox.Text);
+            }
+            catch (Exception e1)
+            {
+                Console.WriteLine(e1.Message);
+
+            } 
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -75,7 +83,15 @@ namespace MyBrowser
         {
             if (e.Key == Key.Enter)
             {
-                Browser.Source = new Uri(@"http://" + Urlbox.Text);
+                try 
+                {
+                    Browser.Source = new Uri(@"http://" + Urlbox.Text);
+                } 
+                catch(Exception e1)
+                {
+                    Console.WriteLine(e1.Message);
+                
+                } 
             
             }
         }
