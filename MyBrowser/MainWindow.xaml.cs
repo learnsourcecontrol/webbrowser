@@ -70,5 +70,14 @@ namespace MyBrowser
             }
            
         }
+
+        private void Urlbox_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Browser.Source = new Uri(@"http://" + Urlbox.Text);
+            
+            }
+        }
     }
 }
